@@ -6,19 +6,19 @@
 <%= image_tag 'k copia.png',:width => 100, :height => 110 %>
 </div> </br>
 <div>
-  <h5>&nbsp;&nbsp;&nbsp;&nbsp; Nombre </h5>
-  <h5>&nbsp;&nbsp;&nbsp;&nbsp; Direccion </h5>
-  <h5>&nbsp;&nbsp;&nbsp;&nbsp; Telefono </h5>
+  <h5>&nbsp;&nbsp;&nbsp;&nbsp; KModa </h5>
+  <h5>&nbsp;&nbsp;&nbsp;&nbsp; Av.América </h5>
+  <h5>&nbsp;&nbsp;&nbsp;&nbsp; 4407131 </h5>
 </div>
 <div >
 
   <table align="right" class="text-right">
     <tr>
-      <td><h4><b>  Cliente:&nbsp;&nbsp;&nbsp; </b></h4> </td> 
+      <td><h4><b>  Cliente:&nbsp;&nbsp;&nbsp; </b></h4> </td>
       <td> <h4> <%= @sale.client.nombre %></h4></td>
     </tr>
     <tr>
-      <td> <h4> <b>NIT:&nbsp;&nbsp;&nbsp;</b></h4> </td> 
+      <td> <h4> <b>NIT:&nbsp;&nbsp;&nbsp;</b></h4> </td>
       <td> <h4> <%= @sale.client.nit %> </h4></td>
     </tr>
   </table>
@@ -47,7 +47,7 @@
         <td><%= sale_product.product.costo * sale_product.amount %></td>
 
         <% total += sale_product.product.costo * sale_product.amount %>
-        
+
       </tr>
       <% end %>
   </tbody>
